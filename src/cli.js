@@ -4,7 +4,8 @@
 require('ts-node').register({
 	typeCheck: false,
 	transpileOnly: true,
-	files: true,
+    files: true,
+    skipProject: true,
 
 	// manually supply our own compilerOptions, otherwise if we run this file
 	// from another project's location (f.e. from Saffron) then ts-node will use
